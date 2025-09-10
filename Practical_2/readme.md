@@ -77,9 +77,9 @@ Accuracy: 0.2500
 
 **Why Evaluation Was Challenging** 
 
-Missing words - My text didn't have all the words needed for standard tests (like "king", "queen", "man", "woman")
-Small text file - Not enough examples to learn strong word relationships
-Different topic - Standard tests use general words, but my text might be about specific topics that don't match
+- Missing words - My text didn't have all the words needed for standard tests (like "king", "queen", "man", "woman")
+- Small text file - Not enough examples to learn strong word relationships
+- Different topic - Standard tests use general words, but my text might be about specific topics that don't match
 
 
 
