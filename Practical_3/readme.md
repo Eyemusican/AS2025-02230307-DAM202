@@ -2,9 +2,13 @@
 
 This project contains 5 exercises that teach you how Simple RNN (Recurrent Neural Networks) work for weather prediction. Each exercise focuses on a different aspect of RNN training and evaluation.
 
+# Note
+The jupyter notebook might not display properly on GitHub due to large output size. Please download the .ipynb file and open it locally in Jupyter to view all the exercise outputs and results.
+
 ## Overview
 
 The exercises use synthetic weather data to predict temperature and other weather variables. You'll learn about sequence length, model complexity, feature selection, different prediction targets, and error analysis.
+
 
 ## Exercise 1: Sequence Length Experiment
 
