@@ -151,4 +151,4 @@ From this exercise, I learned:
 
 ## Summary
 
-These 5 exercises gave me a full introduction to Simple RNNs for weather prediction. I learned how to build models step by step, tune hyperparameters, choose features, and analyze errors. Using synthetic weather data made the results easy to repeat and understand.
+These five exercises gave me a full introduction to Simple RNNs for weather prediction. I learned how to build models step by step, tune hyperparameters, choose features, and analyze errors. Using synthetic weather data made the results easy to repeat and understand.
