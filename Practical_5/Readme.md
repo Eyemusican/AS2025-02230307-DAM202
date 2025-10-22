@@ -311,3 +311,26 @@ French Text
 6. **End-to-End Learning**: Model learns alignment and translation jointly
 
 The model learns to align English and French words implicitly through the attention mechanism, without explicit word-alignment supervision.
+
+
+## ARCHITECTURE FLOW  
+
+![alt text](<Architecture diagram/image.png>)
+
+
+The model translates English to French in these steps:
+
+
+**Encoder**: The input sentence gets tokenized and embedded into vectors. A bidirectional LSTM reads it forward and backward, summing the results (not concatenating) to produce encoder outputs and final states.
+
+
+**Decoder**: Starting with a <start> token, the decoder LSTM generates hidden states one word at a time.
+
+**Attention** : The decoder hidden state queries the encoder outputs to figure out which input words matter most. This creates attention weights (like [0.1, 0.6, 0.2...]) and a context vector.
+
+**Output**: The context vector and decoder hidden state get concatenated, passed through a dense layer, then through softmax to pick the next French word.
+
+**Loop** : The predicted word feeds back as the next input, repeating until <end> or max length. This builds the translation word-by-word.
+
+### Key detail: 
+The decoder hidden state is used twice - once to query attention, and once to combine with the context. This is Luong attention with "general" scoring (query·W·keys). The bidirectional encoder uses summing, not concatenation.
