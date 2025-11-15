@@ -11,7 +11,7 @@ The model uses **Hard Parameter Sharing**, where a shared BERT encoder learns un
 
 ---
 
-## 🎯 Project Requirements (All Met )
+##  Project Requirements (All Met )
 
 ### Part 1: Theoretical Foundation
  **Hard Parameter Sharing Architecture**
@@ -114,7 +114,7 @@ L_MTL = λ_NER × L_NER + λ_QA × L_QA
 
 ### Challenge 1: RAM Limitations (Reason for having moderate accuracy in SQUAD)
 **Problem:** Full SQuAD dataset (87k examples) caused RAM crashes in Colab  
-**Solution:** Used 20% subset (17.5k examples) - still sufficient for demonstrating MTL
+**Solution:** Used 5% subset (4k examples) - still sufficient for demonstrating MTL
 
 ### Challenge 2: Label Alignment for NER
 **Problem:** BERT's subword tokenization creates multiple tokens per word  
